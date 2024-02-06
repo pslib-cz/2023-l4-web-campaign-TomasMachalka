@@ -1,0 +1,1006 @@
+@import url(https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css);
+
+:root{
+    --Cerna: #000000;
+    --Bila: #FFFFFF;
+    --Seda: #D9D9D9;
+    --Sediva: #797979;
+    --primary: #ffffff;
+    --light: #ffffff;
+    --dark: #2b2b2b;
+    --border: #cccccc;
+    --initial-clip-path: 0%;
+    --swiper-theme-color: var(--primary);
+    --swiper-pagination-bullet-size: 1em;
+    --swiper-pagination-bullet-inactive-color: #ffffff;
+    --swiper-pagination-bullet-inactive-opacity: 0.5;
+    --swiper-pagination-progressbar-bg-color: #ea770354;
+}
+
+html {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2 {
+    font-weight: 400;
+}
+
+dt {
+    margin: .5em 0;
+}
+
+dd {
+    margin: 0;
+}
+
+.nadpis-h1{
+    text-align: center;
+    padding-top: .2em;
+    margin-bottom: 0;
+    border-bottom: 4px solid var(--Cerna);
+    border-top: 4px solid var(--Cerna);
+    width: fit-content;
+}
+
+.h1__blok{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.odkaz{
+    color: var(--Bila);
+    border-bottom: 1px solid var(--Bila);
+}
+
+/*HEADER*/
+
+.header{
+    position: sticky;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
+
+/*TŘÍDY K JS*/
+
+.collapse {
+    transform: translateY(-100%);
+    transition: transform .5s;
+}
+.open {
+    transform: translateY(0%);
+    transition: transform .3s;
+}
+
+.header__blackline{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 1em;
+}
+
+.header__email{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header__email--text{
+    margin: 0;
+    color: white;
+}
+
+.header__text{
+    color: var(--Cerna);
+    min-width: 205px;
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.navbar__logo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.header__logo{
+    width: 50px;
+    padding: 0;
+    margin: 0;
+    object-fit: contain;
+}
+
+/*NAVIGACE*/
+
+.nav-link{
+    color: var(--Cerna);
+}
+
+.navbar{
+    position: absolute;
+    width: 75vw;
+    transition: 1s;
+    right: 0;
+}
+
+.nav-item{
+    display: block;
+    text-align: left;
+    border-bottom: 2px solid var(--Seda);
+    padding: .8em 0 .5em 1em;
+}
+
+@media screen and (max-width: 768px){
+
+    .this-page{
+    font-weight: bolder;
+    }
+}
+
+/*HAMBURGER MENU*/
+
+.hamburger {
+    display: block;
+}
+
+.hamburger-nav {
+    background-color: var(--Bila);
+    border-top: 2px solid var(--Seda);
+    /*height: calc(100vh - 4px);*/
+    height: 100vh;
+}
+
+.hamburger-nav {
+    transform: scaleY(0);
+    transition: .5s;
+    transform-origin: top;
+}
+
+.hamburger-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 1em;
+    color: var(--Cerna);
+    background-color: var(--Bila);
+}
+.hamburger-nav menu {
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .hamburger-btn {
+        display: none;
+    }
+
+    .hamburger-nav {
+        transform: none;
+        background-color: var(--Bila);
+        border: none;
+        height: auto;
+    }
+
+    .hamburger-row {
+        display: flex;
+        justify-content: space-between;
+        color: var(--Cerna);
+        align-content: center;
+        padding: 0;
+    }
+}
+
+/*ÚVOD*/
+
+.novinky{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.novinky__blok{
+    max-width: 550px;
+}
+
+.uvod__novinky--img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+/*SWIPER*/
+
+.dot {
+    padding: 0;
+    display: inline-block;
+    width: var(--swiper-pagination-bullet-size, 1em);
+    height: var(--swiper-pagination-bullet-size, 1em);
+    border: 3px solid var(--swiper-theme-color, --primary);
+    background-color: unset;
+    border-radius: 50%;
+  }
+
+  .dot:hover{
+    background-color: var(--primary);
+  }
+
+.uvod__text{
+    text-align: center;
+}
+
+.uvod__img{
+    margin: 0 1em 1em 1em;
+}
+
+.uvod__img img{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    object-fit: cover;
+}
+
+/*FILM*/
+
+.film__sec1{
+    background-image: linear-gradient(160deg, #966128, #643e15, #6b4319, #523210, #553317, #5a310b, #643e15, #533413, #130D06);
+    color: var(--Bila);
+    text-align: center;
+    padding-top: 1em;
+}
+
+.film__sec1--text1{
+    color: var(--Bila);
+    text-align: center;
+    margin: 0;
+    padding: 0 1em;
+}
+
+.film__sec1--text2{
+    color: var(--Bila);
+    margin: 0;
+    padding: 1em;
+    text-align: left;
+}
+
+.film__plakat{
+    margin: 0;
+}
+
+.film__plakat-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: #7D4C18;
+}
+
+.hodnoceni{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: flex-start;
+}
+
+.logo-hodnoceni{
+    width: 100%;
+    object-fit: cover;
+    max-width: 120px;
+}
+
+.logo-imdb{
+    width: 100%;
+    object-fit: cover;
+    max-width: 75px;
+}
+
+.film__sec-trailer{
+    text-align: center;
+    border-bottom: 1px solid var(--Sediva);
+    padding: 1em;
+}
+@media screen and (max-width: 768px){
+.YT__video{
+    position: relative; 
+    padding-bottom: 56.25%; 
+    padding-top: 30px; 
+    height: 0; 
+    overflow: hidden;
+}
+
+.YT__video iframe, .YT__video object, .YT__video embed { 
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; 
+}
+}
+
+.YT-trailer{
+    border: none;
+}
+
+.film__film-o-filmu{
+    text-align: center;
+    padding: 1em;
+    background-image: linear-gradient(#ffffff, #dadada, #c4c4c4, #aaaaaa, #868686, #616161, #4e4e4e, #3a3a3a, #313131, #181818, #000000);
+}
+
+.film-o-filmu__YT-desktop{
+    min-width: 30px;
+    min-height: 195px;
+}
+
+.film-o-filmu{
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    gap: 10px;
+}
+
+.youtube{
+    min-width: 300px;
+    max-width: 500px;
+    width: 100%;
+    min-height: 185px;
+    max-height: 315px;
+    border: none;
+}
+
+.film__soundrack{
+    text-align: center;
+    background-color: var(--Cerna);
+    color: var(--Bila);
+    padding: 1em;
+}
+
+.film__soundrack audio{
+    max-width: 240px;
+}
+
+.first-soundtrack{
+    border-top: 1px solid var(--Seda)
+}
+
+.soundtrack{
+    display: flex;
+    align-items: center;
+    background-color: var(--Cerna);
+    color: var(--Bila);
+    border-bottom: 1px solid var(--Seda);
+    padding: .5em;
+    justify-content: space-between;
+}
+
+.soundtrack__blok{
+    display: flex;
+    align-items: center;
+    min-width: 160px;
+}
+
+.soundtrack__number{
+    font-size: 3em;
+    margin: 0;
+    padding: 0 .3em;
+}
+
+.soundtrack__text{
+    padding: .5em 0;
+}
+
+.soundtrack__text p{
+    margin: 0;
+    text-align: left;
+}
+
+.film__galerie{
+    text-align: center;
+}
+
+.picture{
+    margin: 0;
+}
+
+.film__galerie--img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.galerie__foto a{
+    color: var(--Cerna);
+}
+
+.film__sponzori{
+    text-align: center;
+    color: var(--Bila);
+    background-color: var(--Cerna);
+    padding: 1em;
+}
+
+.sponzori{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 10px;
+}
+
+.sponzori__img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    max-width: 200px;
+}
+
+/*ARCHIV*/
+
+.archiv__misto-konani{
+    display: block;
+    font-size: .83em;
+    margin-top: 1.67em;
+    margin-bottom: 1.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: 400;
+}
+
+.archiv__obsah{
+    display: flex;
+    font-size: 1em;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 1em;
+}
+
+.archiv__obsah a{
+    color: var(--Cerna);
+    margin: .5em;
+}
+
+.youtube__archiv{
+    border: none;
+}
+
+.archiv__RUR{
+    text-align: center;
+    color: var(--Bila);
+    background-image: url(../images/RUR_backgrond.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 1em;
+    background-repeat: no-repeat;
+    background-color: #505050;
+}
+
+.archiv__Tahy-kralu{
+    text-align: center;
+    color: var(--Bila);
+    background-image: url(../images/pozadi-velka-fotka-film.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 1em;
+    background-repeat: no-repeat;
+    background-color: #2A1C0D;
+}
+
+.archiv__obsazeni p{
+    margin: .2em;
+}
+
+.archiv__Special{
+    text-align: center;
+    color: var(--Bila);
+    background-image: url(../images/pozadi-special.png);
+    background-size: cover;
+    background-position: center;
+    padding: 1em;
+    background-repeat: no-repeat;
+    background-color: #404040;
+    border-bottom: 1px solid var(--Sediva);
+    border-top: 1px solid var(--Sediva);
+}
+
+.archiv__Pripad-ztracenych-nuzek, .archiv__The-scissors-case{
+    text-align: center;
+    color: var(--Bila);
+    background-image: url(../images/pozadi-pripad-ztracenych-nuzek.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 1em;
+    background-repeat: no-repeat;
+    background-color: #535353;
+    border-bottom: 1px solid var(--Sediva);
+}
+
+.archiv__Vzestup-zmijozela{
+    text-align: center;
+    color: var(--Bila);
+    background-image: url(../images/pozadi-vzestup-zmijozela.png);
+    background-size: cover;
+    background-position: center;
+    padding: 1em;
+    background-repeat: no-repeat;
+    background-color: #0B1E0A;
+}
+
+.archiv__Hadanky-ve-tme{
+    text-align: center;
+    color: var(--Bila);
+    background-image: url(../images/pozadi-hadanky-ve-tme.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 1em;
+    background-repeat: no-repeat;
+    background-color: #414141;
+    border-top: 1px solid var(--Sediva);
+    border-bottom: 1px solid var(--Sediva);
+}
+
+.archiv__Tri-bratri{
+    text-align: center;
+    color: var(--Bila);
+    background-image: url(../images/pozadi-pribeh-tri-bratri.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 1em;
+    background-repeat: no-repeat;
+    background-color: #554F48;
+    border-bottom: 1px solid var(--Sediva);
+}
+
+.archiv__Tailor-of-Swaffham{
+    text-align: center;
+    color: var(--Bila);
+    background-image: url(../images/pozadi-Tailor-of-Swaffham.png);
+    background-size: cover;
+    background-position: center;
+    padding: 1em;
+    background-repeat: no-repeat;
+    background-color: #1B1D13;
+}
+
+.archiv .archiv__text{
+    text-align: left;
+}
+
+/*O NÁS*/
+
+.o-nas--text{
+    text-align: center;
+}
+
+.o-nas__Adela-Putikova, .o-nas__Tomas-Machalka{
+    text-align: center;
+}
+
+.o-nas__osoby--text{
+    padding: 0 1em 1em 1em;
+    margin: 0;
+}
+
+.o-nas__Adela-Putikova .o-nas__osoby--text, .o-nas__Tomas-Machalka .o-nas__osoby--text{
+    text-align: left;
+}
+
+.o-nas .osoby__text--margin{
+    padding-bottom: 0.5em;
+}
+
+.o-nas__picture{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    object-fit: contain;
+}
+
+/*FOOTER*/
+
+.footer{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding: .5em;
+    border-top: 1px solid var(--Sediva);
+}
+
+.footer__logo{
+    width: 40px;
+    padding: 0;
+    margin: 0;
+    object-fit: contain;
+}
+
+.footer__year{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer__text{
+    color: white;
+}
+
+.footer__text-desktop{
+    display: none;
+}
+
+/*MEDIAQ - MOBIL NA ŠÍŘKU*/
+
+@media screen and (min-width: 768px){
+
+/*Q-HEADER*/
+
+.header__blackline{
+    padding: 1em 2em;
+}
+
+/*Q-NAVIGACE*/
+
+    .header__navigace{
+        display: flex;
+        align-items: center;
+        padding: 2em 1em;
+        justify-content: space-between;
+        background-color: var(--Bila);
+    }
+
+    .navbar{
+        display: flex;
+        /*position: relative;*/
+        justify-content: space-between;
+        transition: none;
+        right: 0;
+        justify-content: right;
+        margin: 0 2em;
+        width: 60vw;
+    }
+
+    .nav__pages{
+        display: flex;
+        align-items: center;
+        max-width: 600px;
+        justify-content: space-between;
+        width: 50vw;
+    }
+
+    .nav-item{
+        display: flex;
+        padding: 0.4em;
+        border: none;
+        justify-content: space-between;
+    }
+
+    .nav-item:hover{
+        border-bottom: 5px solid var(--Cerna);
+        padding-bottom: 0.1em;
+    }
+
+    .this-page{
+        border-bottom: 5px solid var(--Cerna);
+        padding-bottom: 0.1em;
+    }
+    
+/*Q-ÚVOD*/
+
+    .novinky{
+        max-width: 650px;
+    }
+
+/*Q-FILM*/  
+
+    .film__sec1{
+        display: flex;
+        justify-content: center;
+    }
+
+    .film__sec1--plakat{
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 2em 1em 0 1em;
+    }
+
+    .film__sec1--text1{
+        text-align: left;
+        font-size: 1.12em;
+        max-width: 320px;
+    }
+
+    .film__plakat{
+       min-width: 400px;
+       height: 100%;
+       max-width: 450px;
+    }
+
+    .YT-trailer{
+        min-width: 300px;
+        width: 100%;
+        border: none;
+    }
+
+    .YT-trailer, .youtube{
+        min-height: 315px;
+        max-width: 560px;
+    }
+    
+    .film-o-filmu{
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        overflow-x: hidden;
+    }
+
+    .galerie > .swiper-button-prev, .galerie > .swiper-button-next, .film-o-filmu > .swiper-button-prev, .film-o-filmu > .swiper-button-next{
+        display: none;
+    }
+
+    .film-o-filmu__YT-desktop{
+        min-width: 350px;
+        min-height: 195px;
+    }
+
+    .film__galerie--img{
+        object-fit: cover;
+    }
+
+    .film__galerie--foto{
+        text-align: right;
+    }
+
+    .galerie__picture--wide{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: stretch;
+        gap: 10px;
+        margin-bottom: .8em;
+    }
+
+/*ARCHIV*/
+
+    .youtube__archiv{
+        min-width: 300px;
+        width: 100%;
+        max-height: 315px;
+        min-height: 315px;
+        max-width: 560px;
+    }
+
+/*FILMY MENU*/
+
+.filmy_picture{
+    min-height: 20em;
+    max-height: 50em;
+}
+
+
+
+/*Q-O NÁS*/
+
+    .o-nas__Tomas-Machalka{
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
+        align-items: center;
+        margin: auto 1em;
+    }
+
+    .o-nas__picture{
+        min-width: 300px;
+        max-width: 500px;
+    }
+
+    .o-nas__Adela-Putikova{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto 1em;
+    }
+
+/*Q-FOOTER*/
+
+    .footer{
+        justify-content: space-between;
+        padding: .5em 1em;
+    }
+
+    .footer__text-desktop{
+        display: flex;
+        color: var(--Bila);
+    }
+}    
+
+/*TABLET*/
+
+@media screen and (min-width: 961px){
+
+/*Q-HEADER*/
+
+    .header__blackline{
+        padding: 1em 10em;
+    }
+
+    .header__navigace{
+        justify-content: space-between;
+        padding: 2em 10em;
+    }
+
+    .navbar{
+        position: relative;
+        margin: 0;
+    }
+
+    .nav__pages{
+        width: 40vw;
+    }
+
+/*Q-ÚVOD*/
+
+    .uvod{
+        margin: auto 10em;
+    }
+
+    .novinky__blok{
+        max-width: 800px;
+    }
+
+/*Q-FILM*/   
+
+    .film__sec1--blok{
+        margin: auto 10em;
+    }
+
+    .film__sec1--text1{
+        min-width: 330px;
+    }
+
+    .film-o-filmu__blok{
+        margin: auto 6em;
+    }
+
+    .YT-trailer{
+        max-height: 315px;
+    }
+
+     .film-o-filmu__YT-desktop{
+        min-width: 400px;
+        min-height: 220px;
+    }
+
+    .film__soundrack--blok{
+        margin: auto 10em;
+    }
+
+    .film__galerie{
+        margin: auto 10em;
+    }
+
+    .film__galerie, .sponzori{
+        margin: auto 10em;
+    }
+
+/*Q-ARCHIV*/
+
+    .archiv__obsah{
+        margin: auto 10em;
+    }
+
+    .YT-desktop{
+        min-height: 315px;
+    }
+
+    .archiv__RUR, .archiv__Tahy-kralu, .archiv__Special, .archiv__Pripad-ztracenych-nuzek, .archiv__Vzestup-zmijozela, .archiv__Hadanky-ve-tme, .archiv__The-scissors-case, .archiv__Tri-bratri, .archiv__Tailor-of-Swaffham{
+        padding: 1em 10em;
+    }
+
+/*Q-O NÁS*/
+
+    .o-nas--text, .o-nas__Tomas-Machalka, .o-nas__Adela-Putikova{
+        margin: auto 10em;
+    }
+
+/*Q-FOOTER*/
+
+    .footer{
+        padding: .5em 10em;
+    }
+}
+
+/*Q-DESKTOP*/
+
+@media screen and (min-width: 1281px){
+
+/*Q-HEADER*/
+
+.header__blackline{
+    padding: 1em 15em;
+}
+
+.header__navigace{
+    justify-content: space-between;
+    padding: 2em 15em;
+}
+
+/*Q-ÚVOD*/
+
+.uvod{
+    margin: auto 20em;
+}
+
+.novinky__blok{
+    max-width: 950px;
+}
+
+/*Q-FILM*/   
+
+.film__sec1--blok{
+    margin: auto 20em;
+}
+
+.film__sec1--text1{
+    font-size: 1.2em;
+    min-width: 375px;
+}
+
+.film__plakat-img{
+    max-width: 500px;
+}
+
+.film-o-filmu__blok{
+    margin: auto 16em;
+}
+
+.film__soundrack--blok, .film__galerie, .film__galerie, .sponzori{
+    margin: auto 20em;
+}
+
+/*Q-ARCHIV*/
+
+.archiv__obsah{
+    margin: auto 20em;
+}
+
+.archiv__RUR, .archiv__Tahy-kralu, .archiv__Special, .archiv__Pripad-ztracenych-nuzek, .archiv__Vzestup-zmijozela, .archiv__Hadanky-ve-tme, .archiv__The-scissors-case, .archiv__Tri-bratri, .archiv__Tailor-of-Swaffham{
+    padding: 1em 20em;
+}
+
+/*Q-O NÁS*/
+
+.o-nas--text, .o-nas__Tomas-Machalka, .o-nas__Adela-Putikova{
+    margin: auto 20em;
+}
+
+.o-nas__Adela-Putikova--text, .o-nas__Tomas-Machalka--text{
+    max-width: 550px;
+}
+
+/*Q-FOOTER*/
+
+.footer{
+    padding: .5em 20em;
+}
+
+}
+
+@media screen and (min-width: 1435px){  
+
+    .film-o-filmu__YT-desktop{
+        min-height: 270px;
+    }
+
+    .film-o-filmu__blok{
+        margin: auto 20em;
+    }
+
+}
