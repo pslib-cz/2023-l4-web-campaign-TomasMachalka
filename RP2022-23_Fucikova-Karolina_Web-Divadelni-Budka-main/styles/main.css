@@ -779,12 +779,17 @@ dd {
 
 /*FILMY MENU*/
 
-.filmy_picture{
+.filmy_picture {
     min-height: 20em;
-    max-height: 50em;
+    max-height: 36em;
+    transition: 0.5s;
 }
 
-
+.filmy_picture:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 3);
+    transition: 0.5s;
+}
 
 /*Q-O NÁS*/
 
