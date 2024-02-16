@@ -221,10 +221,18 @@
       </figure>
     </main>
     <footer class="footer">
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var currentYear = new Date().getFullYear();
+            document.getElementById('currentYear').innerText = currentYear;
+        });
+    </script>
+
       <a href="./index.html">
         <div class="footer__year">
           <img src="./logo/DB-logo.png" alt="logo DB" class="footer__logo" />
-          <p class="footer__text">&copy;2016-2023 Divadelní Budka</p>
+          <p class="footer__text">&copy;2016–<span id="currentYear"></span> Divadelní Budka</p>
         </div>
       </a>
       <p class="footer__text-desktop">Vytvořila: Karolína Fučíková</p>

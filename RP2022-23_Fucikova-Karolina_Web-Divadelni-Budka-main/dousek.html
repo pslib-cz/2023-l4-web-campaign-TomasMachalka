@@ -126,7 +126,7 @@
             <div class="film__sec1--blok">
                 <h2>Doušek života</h2>
                 <p class="archiv__misto-konani">Film Tomáše Machálky</p>
-                <div class="YT__video"><iframe class="youtube__archiv YT-desktop" src="https://www.youtube.com/embed/uGX-GyDBw10?si=yaXh0FtZ_R2w7OMW" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div class="YT__video"><iframe class="youtube__archiv YT-desktop" src="https://www.youtube.com/embed/2Qela4x9PiY?si=iVfyfEz_LbJK31_Z" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
                 <div class="film__sec1--text2">
                     <p>
                         Doušek života je film, který natočil Tomáš Machálka v rámci své talentové zkoušky na vysokou školu. Při tvorbě vycházel ze vzpomínek na svého dědečka.
@@ -176,14 +176,22 @@
         </section>
     </main>
     <footer class="footer">
+
+        <script>
+          document.addEventListener('DOMContentLoaded', function() {
+              var currentYear = new Date().getFullYear();
+              document.getElementById('currentYear').innerText = currentYear;
+          });
+      </script>
+  
         <a href="./index.html">
-            <div class="footer__year">
-                <img src="./logo/DB-logo.png" alt="logo DB" class="footer__logo">
-                <p class="footer__text">&copy;2016-2023 Divadelní Budka</p>
-            </div>
+          <div class="footer__year">
+            <img src="./logo/DB-logo.png" alt="logo DB" class="footer__logo" />
+            <p class="footer__text">&copy;2016–<span id="currentYear"></span> Divadelní Budka</p>
+          </div>
         </a>
         <p class="footer__text-desktop">Vytvořila: Karolína Fučíková</p>
-    </footer>
+      </footer>
 
     <script>
         lightGallery(
