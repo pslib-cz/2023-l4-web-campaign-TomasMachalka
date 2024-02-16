@@ -254,6 +254,13 @@ dd {
     object-fit: cover;
 }
 
+/*Filmy*/
+
+.filmy_picture{
+    min-height: 15em;
+    max-height: 15em;
+}
+
 /*FILM*/
 
 .film__sec1{
@@ -442,6 +449,17 @@ dd {
     object-fit: contain;
     max-width: 200px;
 }
+
+/*Filmy*/
+
+.filmy__obsah{
+    display: flex;
+    font-size: 1em;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 1em;
+}
+
 
 /*ARCHIV*/
 
@@ -977,10 +995,13 @@ dd {
 }
 
 /*Filmy*/
+.filmy__obsah{
+    margin: auto 20em;
+}
 
 .filmy_picture {
-    min-height: 20em;
-    max-height: 36em;
+    min-height: 25em;
+    max-height: 37em;
     }
 
 /*Q-ARCHIV*/
