@@ -64,7 +64,7 @@ dd {
 /*HEADER*/
 
 .header{
-    position: sticky;
+    position:sticky;
     left: 0;
     right: 0;
     top: 0;
@@ -218,7 +218,6 @@ dd {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 50px;
     overflow: hidden;
 }
 
@@ -461,9 +460,9 @@ dd {
 }
 
 
-/*ARCHIV*/
+/*divadlo*/
 
-.archiv__misto-konani{
+.divadlo__misto-konani{
     display: block;
     font-size: .83em;
     margin-top: 1.67em;
@@ -473,7 +472,7 @@ dd {
     font-weight: 400;
 }
 
-.archiv__obsah{
+.divadlo__obsah{
     display: flex;
     font-size: 1em;
     justify-content: space-evenly;
@@ -481,16 +480,38 @@ dd {
     padding-bottom: 1em;
 }
 
-.archiv__obsah a{
+.divadlo__obsah a{
     color: var(--Cerna);
     margin: .5em;
+    padding: .5em;
+    border-radius: 50px;
+    border: #000000 solid 1px;
 }
 
-.youtube__archiv{
+.divadlo__obsah a:hover{
+    background-color: #000000;
+    transition: .5s;
+    color: var(--Bila);
+}
+
+.youtube__divadlo{
     border: none;
 }
 
-.archiv__RUR{
+.divadlo__kabaret{
+    text-align: center;
+    color: var(--Bila);
+    background-image: url(../images/kabaret_bgnd.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 1em;
+    background-repeat: no-repeat;
+    background-color: #1e0a0a;
+}
+
+
+/*
+.divadlo__RUR{
     text-align: center;
     color: var(--Bila);
     background-image: url(../images/RUR_backgrond.jpg);
@@ -501,7 +522,7 @@ dd {
     background-color: #505050;
 }
 
-.archiv__Tahy-kralu{
+.divadlo__Tahy-kralu{
     text-align: center;
     color: var(--Bila);
     background-image: url(../images/pozadi-velka-fotka-film.jpg);
@@ -511,12 +532,13 @@ dd {
     background-repeat: no-repeat;
     background-color: #2A1C0D;
 }
+*/
 
-.archiv__obsazeni p{
+.divadlo__obsazeni p{
     margin: .2em;
 }
 
-.archiv__Special{
+.divadlo__Special{
     text-align: center;
     color: var(--Bila);
     background-image: url(../images/pozadi-special.png);
@@ -529,10 +551,10 @@ dd {
     border-top: 1px solid var(--Sediva);
 }
 
-.archiv__Pripad-ztracenych-nuzek, .archiv__The-scissors-case{
+.divadlo__Pripad-ztracenych-nuzek, .divadlo__The-scissors-case{
     text-align: center;
     color: var(--Bila);
-    background-image: url(../images/pozadi-pripad-ztracenych-nuzek.jpg);
+    background-image: url(../images/scissors_bgnd.jpg);
     background-size: cover;
     background-position: center;
     padding: 1em;
@@ -541,10 +563,10 @@ dd {
     border-bottom: 1px solid var(--Sediva);
 }
 
-.archiv__Vzestup-zmijozela{
+.divadlo__Vzestup-zmijozela{
     text-align: center;
     color: var(--Bila);
-    background-image: url(../images/pozadi-vzestup-zmijozela.png);
+    background-image: url(../images/slitherin_bgnd.jpg);
     background-size: cover;
     background-position: center;
     padding: 1em;
@@ -552,10 +574,10 @@ dd {
     background-color: #0B1E0A;
 }
 
-.archiv__Hadanky-ve-tme{
+.divadlo__Hadanky-ve-tme{
     text-align: center;
     color: var(--Bila);
-    background-image: url(../images/pozadi-hadanky-ve-tme.jpg);
+    background-image: url(../images/hobbit_bgnd.jpg);
     background-size: cover;
     background-position: center;
     padding: 1em;
@@ -565,10 +587,10 @@ dd {
     border-bottom: 1px solid var(--Sediva);
 }
 
-.archiv__Tri-bratri{
+.divadlo__Tri-bratri{
     text-align: center;
     color: var(--Bila);
-    background-image: url(../images/pozadi-pribeh-tri-bratri.jpg);
+    background-image: url(../images/bratri_bgnd.jpg);
     background-size: cover;
     background-position: center;
     padding: 1em;
@@ -577,10 +599,10 @@ dd {
     border-bottom: 1px solid var(--Sediva);
 }
 
-.archiv__Tailor-of-Swaffham{
+.divadlo__Tailor-of-Swaffham{
     text-align: center;
     color: var(--Bila);
-    background-image: url(../images/pozadi-Tailor-of-Swaffham.png);
+    background-image: url(../images/tailor_bgnd.jpg);
     background-size: cover;
     background-position: center;
     padding: 1em;
@@ -588,7 +610,7 @@ dd {
     background-color: #1B1D13;
 }
 
-.archiv .archiv__text{
+.divadlo .divadlo__text{
     text-align: left;
 }
 
@@ -785,9 +807,9 @@ dd {
         margin-bottom: .8em;
     }
 
-/*ARCHIV*/
+/*divadlo*/
 
-    .youtube__archiv{
+    .youtube__divadlo{
         min-width: 300px;
         width: 100%;
         max-height: 315px;
@@ -919,9 +941,9 @@ dd {
         margin: auto 10em;
     }
 
-/*Q-ARCHIV*/
+/*Q-divadlo*/
 
-    .archiv__obsah{
+    .divadlo__obsah{
         margin: auto 10em;
     }
 
@@ -929,7 +951,7 @@ dd {
         min-height: 315px;
     }
 
-    .archiv__RUR, .archiv__Tahy-kralu, .archiv__Special, .archiv__Pripad-ztracenych-nuzek, .archiv__Vzestup-zmijozela, .archiv__Hadanky-ve-tme, .archiv__The-scissors-case, .archiv__Tri-bratri, .archiv__Tailor-of-Swaffham{
+    .divadlo__RUR, .divadlo__kabaret, .divadlo__Tahy-kralu, .divadlo__Special, .divadlo__Pripad-ztracenych-nuzek, .divadlo__Vzestup-zmijozela, .divadlo__Hadanky-ve-tme, .divadlo__The-scissors-case, .divadlo__Tri-bratri, .divadlo__Tailor-of-Swaffham{
         padding: 1em 10em;
     }
 
@@ -971,7 +993,7 @@ dd {
     max-width: 950px;
 }
 
-/*Q-FILM*/   archiv
+/*Q-FILM*/   divadlo
 
 .film__sec1--blok{
     margin: auto 20em;
@@ -996,7 +1018,8 @@ dd {
 
 /*Filmy*/
 .filmy__obsah{
-    margin: auto 20em;
+    margin: auto 10em;
+    gap: 2em;
 }
 
 .filmy_picture {
@@ -1004,13 +1027,13 @@ dd {
     max-height: 37em;
     }
 
-/*Q-ARCHIV*/
+/*Q-divadlo*/
 
-.archiv__obsah{
-    margin: auto 20em;
+.divadlo__obsah{
+    margin: auto 2em;
 }
 
-.archiv__RUR, .archiv__Tahy-kralu, .archiv__Special, .archiv__Pripad-ztracenych-nuzek, .archiv__Vzestup-zmijozela, .archiv__Hadanky-ve-tme, .archiv__The-scissors-case, .archiv__Tri-bratri, .archiv__Tailor-of-Swaffham{
+.divadlo__RUR, .divadlo__kabaret, .divadlo__Tahy-kralu, .divadlo__Special, .divadlo__Pripad-ztracenych-nuzek, .divadlo__Vzestup-zmijozela, .divadlo__Hadanky-ve-tme, .divadlo__The-scissors-case, .divadlo__Tri-bratri, .divadlo__Tailor-of-Swaffham{
     padding: 1em 20em;
 }
 
