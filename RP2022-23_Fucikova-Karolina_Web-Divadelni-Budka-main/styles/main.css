@@ -155,6 +155,10 @@ dd {
     .this-page{
     font-weight: bolder;
     }
+
+    .board_pic{
+        display: none;
+    }
 }
 
 /*HAMBURGER MENU*/
