@@ -61,6 +61,16 @@ dd {
     border-bottom: 1px solid var(--Bila);
 }
 
+.board{
+    display: flex;
+    align-items: baseline;
+    height: 100%;
+}
+
+.board_pic{
+    min-width: 20%;
+    height: fit-content;
+}
 /*HEADER*/
 
 .header{
@@ -208,6 +218,7 @@ dd {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    min-width: 60%;
 }
 
 .novinky__blok{
@@ -1055,7 +1066,7 @@ dd {
 
 }
 
-@media screen and (min-width: 1435px){  
+@media screen and (min-width: 1435px){
 
     .film-o-filmu__YT-desktop{
         min-height: 270px;
@@ -1064,5 +1075,4 @@ dd {
     .film-o-filmu__blok{
         margin: auto 20em;
     }
-
 }
