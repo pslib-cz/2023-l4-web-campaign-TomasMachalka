@@ -1,5 +1,8 @@
 @import url(https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css);
 
+html{
+    scroll-behavior: smooth;
+}
 :root{
     --Cerna: #000000;
     --Bila: #FFFFFF;
@@ -275,13 +278,23 @@ dd {
     max-height: 15em;
 }
 
-/*FILM*/
+/*FILM - pozadí default color*/
 
 .film__sec1{
     background-image: linear-gradient(160deg, #966128, #643e15, #6b4319, #523210, #553317, #5a310b, #643e15, #533413, #130D06);
     color: var(--Bila);
     text-align: center;
     padding-top: 1em;
+}
+
+/*Paleta pozadí*/
+
+.rur_color{
+    background-image: linear-gradient(160deg, rgba(138,53,1,1) 14%, rgba(0,20,99,1) 56.99999999999999%);
+}
+
+.havran_color{
+    background-image: linear-gradient(160deg, rgba(170,170,170,1) 0%, rgba(13,13,13,1) 57%, rgba(8,8,8,1) 100%);
 }
 
 .film__sec1--text1{
